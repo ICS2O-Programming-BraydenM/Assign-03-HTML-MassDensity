@@ -5,16 +5,17 @@
 
 "use strict"
 
-// This function calculates Kilograms to Pounds
+// This function calculates Mass from density and volume
  
-function onButtonClicked() {
-  // get user input
-  let weight_in_kilograms = document.getElementById('kilogram').value;
+function onButtonClick() {
+  // get user input (density and volume to calculate mass)
+  let density = document.getElementById('density').value;
+  let volume = document.getElementById('volume').value;
 
-  // calculate the weight in pounds
-  let weight_in_pounds = weight_in_kilograms * 2.205
-  let weight_in_pounds_rounded = weight_in_pounds.toFixed(2)
+  // calculate the mass from density and volume
+  let mass = density * volume 
+  let mass_rounded = mass.toFixed(2)
 
-  // display the results
-  document.getElementById('display-results').innerHTML = "Your weight in pounds is " + weight_in_pounds.toFixed(2) + "lbs";
+  // display the results on webpage
+  document.getElementById('display-results').innerHTML = "The mass is " + mass.toFixed(2) + "kg";
 }

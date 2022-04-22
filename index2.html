@@ -3,7 +3,7 @@
   <head>
 <!-- metadata -->
     <meta charset="utf-8">
-    <meta name="description" content="My first Assignment">
+    <meta name="description" content="My third Assignment">
     <meta name="keywords" content="immaculata, ics2o">
     <meta name="author" content="Brayden MacMillan">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -49,19 +49,21 @@
           <span class="mdl-radio__label">No</span>
         </label>
 
-      <!-- Adding a JavaScript button --> 
-    <script src="./js/script.js"></script>
+      <!-- Adding a JavaScript button that calculates mass --> 
+    <script src="./js/script2.js"></script>
   <center>
-    <h1 style="background-color:palevioletred"><font face="Garamond">Kg to Lbs program, with JS</font></h1>
+    <h1 style="background-color:palevioletred"><font face="Garamond">Mass Program, with JS</font></h1>
     <p>
       <h3 style="background-color:moccasin"><font face="Garamond">Please enter your information:</font></h3>
-      <form action="javascript:onButtonClicked()">
-        <label for="weight">Weight in kg</label>
-        <input type="number" step="0.01" id="kilogram" placeholder="Weight in kilograms"><br><br>
-        <input type="submit" value="Calculate Lbs">
+      <form action="javascript:onButtonClick()">
+        <label for="density">The density (kg/m<sup>3</sup>)</label>
+        <input type="number" step="0.01" id="density" placeholder="Density in kilograms/metres cubed"><br><br>
+         <label for="volume">The volume in m<sup>3</sup></label>
+        <input type="number" step="0.01" id="volume" placeholder="Volume in cubic metres"><br><br>
+        <input type="submit" value="Calculate Density">
       </form>
     </p>
-
+    
     <!-- Create a space where the user information will be displayed -->
 		<div id="display-results">
     </div>
